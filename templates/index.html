@@ -14,7 +14,10 @@
     {{pseudo}} a vaincu {{nbre_monstre}} monstres!
 </p>
 <p>
-    {{ liste_monstres }}
+    <h6>La listre des monstres :</h6>
+    {% for m in liste_monstres %}
+   <p> {{m}}</p>
+    {% endfor %}
 </p>
 {% else %}
 <p>Veuillez taper un nom ...</p>
